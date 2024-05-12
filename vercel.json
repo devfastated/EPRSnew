@@ -24,5 +24,14 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    }
+    },
+    "builds": [
+        {
+          "src": "public",
+          "use": "@vercel/build",
+          "config": {
+            "nvm": "node" 
+          }
+        }
+      ]
 }
